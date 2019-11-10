@@ -106,6 +106,7 @@ public class Graph {
 		dfs(0);
 	}
 
+	//스택 사용
 	void dfs(int index) {
 		Node root = nodes[index];
 		Stack<Node> stack = new Stack<Node>();
@@ -137,6 +138,7 @@ public class Graph {
 		bfs(0);
 	}
 
+	//큐사용
 	void bfs(int index) 
 	{
 		Node root = nodes[index];
@@ -159,6 +161,7 @@ public class Graph {
 		}
 	}
 
+	//재귀호출
 	void dfsR(Node r) 
 	{
 		if (r == null) return;
@@ -174,6 +177,7 @@ public class Graph {
 		}
 	}
 
+	//재귀호출
 	void dfsR(int index) 
 	{
 		Node r = nodes[index];
